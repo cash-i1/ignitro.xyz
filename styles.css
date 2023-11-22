@@ -31,7 +31,8 @@ body {
     color: #fff; /* white text color */
     font-family: "Comic Sans MS", cursive, sans-serif; /* Comic Sans MS font with fallbacks */
     margin: 0; /* remove default margin */
-    background-image: url("assets/rainbow.gif");
+    background-image: url("assets/space.jpg");
+
 }
 
 .centre {
