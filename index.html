@@ -8,6 +8,8 @@
         .container {
             display: flex;
             height: 100vh;
+            overflow-y: auto; 
+            overflow-x: hidden;
         }
 
         .sidebar {
@@ -15,7 +17,19 @@
             background-color: #0000004e;
             padding: 20px;
         }
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse; /* Reverse the order for small screens */
+            }
 
+            .sidebar {
+                width: 100%;
+            }
+
+            .content-box {
+                flex-grow: 1;
+            }
+        }
         .content-box {
             flex-grow: 1;
             padding: 20px;
@@ -30,7 +44,7 @@
         }
     </style>
     <link rel="stylesheet" href="styles.css">
-    <title>Your Website</title>
+    <title>ignitro.xyz</title>
 </head>
 <body>
 
