@@ -27,10 +27,10 @@
 }
 
 body {
-    background-color: #000; /* black background color */
-    color: #fff; /* white text color */
-    font-family: "Comic Sans MS", cursive, sans-serif; /* Comic Sans MS font with fallbacks */
-    margin: 0; /* remove default margin */
+    background-color: #000;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
     background-image: url("assets/space.jpg");
 
 }
@@ -182,3 +182,47 @@ body {
   box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
   outline: none;
 }
+
+
+
+h1, h2, h3 {
+    color: #ff4081; /* Pink color for headers */
+}
+
+/* Add a subtle drop shadow to text */
+h1, h2, h3, p {
+    text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
+}
+
+/* Style the links */
+a {
+    color: #5f5fff; /* Light blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the images */
+img {
+    border-radius: 5px; /* Add a slight border radius to images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+}
+
+/* Style the figures and figcaptions */
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #a9a9a9; /* Light gray color for captions */
+}
+
+/* Style the paragraphs */
+p {
+    line-height: 1.5;
+}
+
+/* Style the header container */

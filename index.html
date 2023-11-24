@@ -3,46 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #0000004e;
+            padding: 20px;
+        }
+
+        .content-box {
+            flex-grow: 1;
+            padding: 20px;
+
+        }
+        .bottom-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 10px; /* Optional: Add some margin for spacing */
+            width: 100%;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
 </head>
 <body>
-    <h1 class="centre">
-        Hello, world!
-    </h1>
-    <a href="https://youtube.com/rickroll" class="centre">
-        <button class="button">Hello jerld</button>
-    </a>
-    <a href="https://youtu.be/dQw4w9WgXcQ?si=lA5_N7htKLSEIX9j" class="centre">
-        <button class="button">Hello real the real jerld</button>
-    </a>
 
-    <div class="centre-mid">
-        test 
-        test
-        test
-        tes asdf asdf sd fsd g
+<div class="container">
+    <div class="sidebar">
+        <h2>Projects</h2>
+        <ul>
+            <li style="list-style-type: none;">
+                <a href="games/">
+                    <button class="button-72">Games</button>
+                </a>
+            </li>        
+            <li style="list-style-type: none;">
+                <a href="https://cashignitro.carrd.co">
+                    <button class="btn">Carrd</button>
+                </a>
+            </li>
+        </ul>    
+        
+        <h2>Socials</h2>
+
+        <a href="https://github.com/cash-i1">
+            <img src="assets/github_icon.png" width="50">
+        </a>
+        <a href="https://youtube.com/cashigrtro">
+            <img src="assets/youtube_icon.png" width="50">
+        </a>
+
     </div>
 
-
-
-    <h2>Index</h2>
-    <ul>
-        <li style="list-style-type: none;">
-            <a href="games/">
-                <button class="button-72">Games</button>
+    <div class="content-box">
+            
+        <h3 align="center">
+            <a href="https://www.youtube.com/">
+            <img src="https://avatars.githubusercontent.com/u/117874913?v=4" width="100" alt="Logo" /><br />
             </a>
-        </li>        
-        <li style="list-style-type: none;">
-            <a href="https://cashignitro.carrd.co">
-                <button class="btn">Carrd</button>
-            </a>
-        </li>
-    </ul>
+            I am ignitro and I am bored
+        </h3>
+
+        <h2>About me</h2>
+        <p>I haven't been programming for very long, at least according to this:</p>
+        <img src="https://github.com/cash-i1/cash-i1/assets/117874913/7cb56c30-3936-4eb0-9fe1-f2dc61a4f8c5" alt="GitHub Stats" />
+
+        <h2>Languages I can use</h2>
+        <p><em>Note: I'm not a mega professional at any of these languages</em></p>
+
+        <figure>
+            <img src="https://github.com/cash-i1/cash-i1/assets/117874913/14f47d02-262a-4a56-9335-b41a88f2363f" width="100" alt="">
+            <figcaption>Since April 2023</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://github.com/cash-i1/cash-i1/assets/117874913/b53e7b85-7201-4377-ac41-212d5e75dd5e" width="100" alt="">
+            <figcaption>Since September 2023</figcaption>
+        </figure>
+
+        <h2>Things I've made</h2>
+        <p><a href="/games/UftLFaL/">Up from the Lava From as Lebron</a>: A game where you play as LeBron James and go up from rising lava.</p>
+        <p><a href="/games/enviroment-up/">Enviroment Up!</a>: A game where you play as a random stock image and jump forever while avoiding pollution (Doodle Jump clone).</p>
 
 
-    
-        
+    </div>
+</div>
 
 </body>
 </html>
