@@ -6,7 +6,22 @@
 		<title>labron up sim reloaded</title>
 		<meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
     	<meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+		<script defer>
+			(function() {
+				document.addEventListener('DOMContentLoaded', function() {
+					var metaOpener = document.createElement('meta');
+					metaOpener.httpEquiv = 'Cross-Origin-Opener-Policy';
+					metaOpener.content = 'same-origin';
+					document.head.appendChild(metaOpener);
 
+					var metaEmbedder = document.createElement('meta');
+					metaEmbedder.httpEquiv = 'Cross-Origin-Embedder-Policy';
+					metaEmbedder.content = 'require-corp';
+					document.head.appendChild(metaEmbedder);
+				});
+			})();
+
+		</script>
 		<style>
 
 body {
