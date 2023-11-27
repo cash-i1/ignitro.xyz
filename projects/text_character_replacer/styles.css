@@ -1,0 +1,79 @@
+@keyframes spin_in {
+    from {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+    to {
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
+
+@keyframes bigify {
+    from {
+        font-size: 100%;
+    }
+    to {
+        font-size: 100px;
+    }
+}
+
+body {
+    animation: spin_in 1200ms;
+}
+
+
+textarea {
+    font-family: "Calibri", Arial, Helvetica, sans-serif;
+    resize: none;
+    transform: scale(1);
+    transition: transform 300ms;
+}
+
+
+
+textarea:focus {
+    transform: scale(1.03);
+}
+
+h1 {
+    font-family: "Segoe UI";
+}
+
+button {
+    font-size: large;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 300ms;
+
+}
+
+button:hover {
+    transform: scale(3);
+    background-color: lightgreen;
+
+}
+
+button:not(:hover) {
+    transform: scale(1);
+    background-color: aqua;
+}
+
+
+.centred {
+    text-align: center;
+    
+}
+
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: ;
+}
+
+.left {
+    text-align: left;
+}
+
+.char_input {
+    resize: none;
+    height: 15px;
+}
