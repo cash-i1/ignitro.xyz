@@ -23,6 +23,8 @@ a {
     75% { transform: rotate(0deg); }
 }
 
+
+
 .special-header {
     animation: spin 3s ease-in-out infinite;
     cursor: pointer;
@@ -34,4 +36,18 @@ a {
     margin: auto;
     width: 50%;
     text-align: center ;
+}
+
+@keyframes flying-ignitro {
+    0% { transform: translate(-400%, -150%); }
+    25% { transform: translate(0%, -150%); }
+    50% { transform: translate(200%, -250%); }
+    75% { transform: translate(360%, -320%); }
+    100% { transform: translate(500%, -600%); }
+}
+
+.flying-ignitro {
+    position: absolute;
+    scale: 0.15;
+    animation: flying-ignitro 10s ease-in-out infinite;
 }
