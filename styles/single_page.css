@@ -1,0 +1,92 @@
+body { 
+   background-image: url(/bg.gif);
+
+}
+
+h1 {
+   color: aliceblue;
+   text-align: center;
+   font-size: 40px;
+
+}
+
+div.content-container {
+   background-color: rgba(0, 0, 0, 0.5);
+   margin: auto;
+   width: 70%;
+   border: 3px solid grey;
+   border-radius: 15px;
+   padding: 10px;
+   transition: all 0.3s ease-in-out;
+ 
+
+}
+
+
+
+div.content p {
+   color: white;
+   font-size: 20px;
+
+}
+
+.top-bar button {
+   margin: 0 auto;
+   border-radius: 20px;
+   font-size: 16px;
+}
+
+div.top-bar {
+   margin: 0 auto;
+   text-align: right;
+   
+
+}
+
+.top-bar a {
+   color: white;
+   font-size: 20px;
+   transition: all 0.3s;
+   cursor: pointer;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding-left: 15px;
+   display: inline-block;
+   vertical-align: middle;
+   
+}
+
+.top-bar a:hover {
+   color: lightskyblue;
+   transform: rotateZ(2deg);
+}
+
+.top-bar img {
+   width: 35px;
+   height: auto;
+   vertical-align: middle;
+}
+
+div.title h2 {
+   display: inline-flexbox;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px auto;
+   margin: 0px auto;
+   position: absolute;
+   /* font-size: 20px; */
+}
+
+/* div.title {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   position: absolute;
+   padding: 0px;
+   margin: 0px;
+}
+
+div.title h1 {
+   margin: 0;
+   padding: 0;
+
+} */
