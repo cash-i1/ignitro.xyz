@@ -1,0 +1,3 @@
+[submodule "run/uftlfal_web_leaderboard"]
+	path = run/uftlfal_web_leaderboard
+	url = https://github.com/cash-i1/uftlfal_web_leaderboard
