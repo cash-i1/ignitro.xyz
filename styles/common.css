@@ -1,176 +1,205 @@
 /* Fonts */
 @font-face {
-    font-family: source_code_pro;
-    src: url(/assets/fonts/source_code_pro.ttf);
+  font-family: source_code_pro;
+  src: url(/assets/fonts/source_code_pro.ttf);
 }
 @font-face {
-    font-family: fira_sans;
-    src: url(/assets/fonts/fira_sans.ttf);
+  font-family: fira_sans;
+  src: url(/assets/fonts/fira_sans.ttf);
 }
 @font-face {
-    font-family: droid_serif;
-    src: url(/assets/fonts/droid_serif.ttf);
+  font-family: droid_serif;
+  src: url(/assets/fonts/droid_serif.ttf);
 }
 @font-face {
-    font-family: droid_serif_bold;
-    src: url(/assets/fonts/droid_serif_bold.ttf);
+  font-family: droid_serif_bold;
+  src: url(/assets/fonts/droid_serif_bold.ttf);
 }
 
 /* Keyframes */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(-5deg); }
-    75% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
 }
 @keyframes flying-ignitro {
-    0% { transform: translate(-400%, -150%); }
-    25% { transform: translate(0%, -150%); }
-    50% { transform: translate(200%, -250%); }
-    75% { transform: translate(360%, -320%); }
-    100% { transform: translate(500%, -600%); }
+  0% {
+    transform: translate(-400%, -150%);
+  }
+  25% {
+    transform: translate(0%, -150%);
+  }
+  50% {
+    transform: translate(200%, -250%);
+  }
+  75% {
+    transform: translate(360%, -320%);
+  }
+  100% {
+    transform: translate(500%, -600%);
+  }
 }
 @keyframes move {
-    0% { transform: translateY(0); } 
-    50% { transform: translateY(-60%); }
-    100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Screen Size Compatibility */
 @media screen and (max-width: 1300px) {
-    .div-centre {
-        width: 100%;
-        padding: 10px 10px 10px 10px;
-    }
-    .flying-ignitro { opacity: 0.2; }
-    .div-bottom { display: none; }
+  .div-centre {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+  .flying-ignitro {
+    opacity: 0.2;
+  }
+  .div-bottom {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
-    .special-header { font-size: 40px; }
+  .special-header {
+    font-size: 40px;
+  }
 }
 
 /* Base Styling */
 body {
-    background-color: black;
-    background-image: url("/assets/space.jpg");
+  background-color: black;
+  background-image: url("/assets/space.jpg");
 }
 
 h1 {
-    color: #ff4081;
-    text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
-    font-family: droid_serif_bold;
-    font-weight: 100;
+  color: #ff4081;
+  text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
+  font-family: droid_serif_bold;
+  font-weight: 100;
 }
 
 h2 {
-    color: #4046ff;
-    text-shadow: rgba(21, 0, 255, 0.66) 1px 0 10px;
-    font-family: droid_serif_bold;
-    font-weight: 100;
+  color: #4046ff;
+  text-shadow: rgba(21, 0, 255, 0.66) 1px 0 10px;
+  font-family: droid_serif_bold;
+  font-weight: 100;
 }
 
 p {
-    font-size: 20px;
-    color: #a940ff;
-    text-shadow: rgba(170, 0, 255, 0.66) 1px 0 10px;
-    font-family: fira_sans;
-}   
+  font-size: 20px;
+  color: #a940ff;
+  text-shadow: rgba(170, 0, 255, 0.66) 1px 0 10px;
+  font-family: fira_sans;
+}
 
 a {
-    color: #5f5fff;
-    text-decoration: none;
-    text-emphasis: bold;
-    font-family: source_code_pro;
+  color: #5f5fff;
+  text-decoration: none;
+  text-emphasis: bold;
+  font-family: source_code_pro;
 }
 
 button {
-    color:#ff4081;
-    background-color: rebeccapurple;
-    border-radius: 15%;
-    border-color: black;
-    text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
-    box-shadow: 0px 0px 10px 2px rebeccapurple;
-    transition: ease-in-out 150ms;
-    font-size: 40px;
+  color: #ff4081;
+  background-color: rebeccapurple;
+  border-radius: 15%;
+  border-color: black;
+  text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
+  box-shadow: 0px 0px 10px 2px rebeccapurple;
+  transition: ease-in-out 150ms;
+  font-size: 40px;
 }
 
 button:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 strong {
-    font-size: 20px;
-    color: #d940ff;
-    text-shadow: rgba(221, 0, 255, 0.66) 1px 2px 10px;
-    font-family: fira_sans;
+  font-size: 20px;
+  color: #d940ff;
+  text-shadow: rgba(221, 0, 255, 0.66) 1px 2px 10px;
+  font-family: fira_sans;
 }
 
-ul, ol {
-    font-size: 20px;
-    color: #ffd940;
-    text-shadow: rgba(255, 221, 0, 0.66) 1px 0 10px;
-    font-family: fira_sans;
-}   
+ul,
+ol {
+  font-size: 20px;
+  color: #ffd940;
+  text-shadow: rgba(255, 221, 0, 0.66) 1px 0 10px;
+  font-family: fira_sans;
+}
 
 hr {
-    box-shadow: 0px 0px 5px 2px rgb(253, 98, 173);
-    border: none;
-    height: 0px;
+  box-shadow: 0px 0px 5px 2px rgb(253, 98, 173);
+  border: none;
+  height: 0px;
 }
 
 /* Class Styles */
 .special-header {
-    animation: spin 3s ease-in-out infinite;
-    font-size: 80px;
-    pointer-events: none;
-    user-select: none;
+  animation: spin 3s ease-in-out infinite;
+  font-size: 80px;
+  pointer-events: none;
+  user-select: none;
 }
 
 .centre {
-    text-align: center ;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centre-left {
-    text-align: left;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flying-ignitro {
-    position: absolute;
-    scale: 0.15;
-    animation: flying-ignitro 10s ease-in-out infinite;
-    pointer-events: none;
+  position: absolute;
+  scale: 0.15;
+  animation: flying-ignitro 10s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .div-centre {
-    height: 100vh;
-    width: calc(100% / 3);
-    margin: 0 auto;
-    flex-direction: column;
-    gap: 2px;
+  height: 100vh;
+  width: calc(100% / 3);
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .div-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 10px;
 }
 
 .div-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-left: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 10px;
 }
-
-

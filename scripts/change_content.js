@@ -7,10 +7,10 @@ function change_content(path) {
         .then(html => {
             content_div.innerHTML = html;
         })
-    .catch(error => console.error('Error fetching file:', error));
+        .catch(error => console.error('Error fetching file:', error));
 
 }
 
-window.onload = function() {
+window.onload = function () {
     change_content('/static/home.html')
 }

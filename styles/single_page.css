@@ -3,16 +3,21 @@ div.content-container {
   background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
   width: 70%;
-  border: 3px solid grey;
   border-radius: 15px;
   padding: 10px;
+  margin-top: 35px; 
   transition: all 0.3s ease-in-out;
+
+  /* (ignitro styles) */
+  box-sizing: border-box;
+  border: 3px solid rgb(105, 148, 223);
+  box-shadow: 0px 0px 10px 2px rgb(98, 155, 253);
 }
 
-div.content p {
+/* div.content p {
   color: white;
   font-size: 20px;
-}
+} */
 
 .top-bar button {
   margin: 0 auto;
@@ -26,11 +31,20 @@ div.top-bar {
 }
 
 .top-bar a {
-  color: white;
+  
   font-size: 20px;
   transition: all 0.3s;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Old Styles */
+  /* color: white; */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+
+  /* Ignitro Styles */
+  font-family: "source_code_pro";
+  font-weight: 800;
+  color: #5f5fff;
+
   padding-left: 15px;
   display: inline-block;
   vertical-align: middle;
