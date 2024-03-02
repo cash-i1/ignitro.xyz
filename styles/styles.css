@@ -1,11 +1,19 @@
 /* Fonts */
 @font-face {
     font-family: source_code_pro;
-    src: url(/assets/source_code_pro.ttf);
+    src: url(/assets/fonts/source_code_pro.ttf);
 }
 @font-face {
     font-family: fira_sans;
-    src: url(assets/fira_sans.ttf);
+    src: url(/assets/fonts/fira_sans.ttf);
+}
+@font-face {
+    font-family: droid_serif;
+    src: url(/assets/fonts/droid_serif.ttf);
+}
+@font-face {
+    font-family: droid_serif_bold;
+    src: url(/assets/fonts/droid_serif_bold.ttf);
 }
 
 /* Keyframes */
@@ -44,17 +52,20 @@
 /* Base Styling */
 body {
     background-color: black;
-    background-image: url("assets/space.jpg");
+    background-image: url("/assets/space.jpg");
 }
 
 h1 {
     color: #ff4081;
     text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
+    font-family: droid_serif_bold;
 }
 
 h2 {
     color: #4046ff;
     text-shadow: rgba(21, 0, 255, 0.66) 1px 0 10px;
+    font-family: droid_serif_bold;
+
 }
 
 p {
