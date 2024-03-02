@@ -67,7 +67,7 @@
     padding: 10px 10px 10px 10px;
   }
   .flying-ignitro {
-    opacity: 0.2;
+    display: none;
   }
   .div-bottom {
     display: none;
