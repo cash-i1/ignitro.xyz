@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Splitter</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="centred">
+
+        <h1>Text character replacer.</h1>
+        
+        <div>
+            <textarea name="text_input" id="text_input" cols="30" rows="10">This is a test</textarea>
+            <textarea name="text_output" id="text_output" cols="30" rows="10"></textarea>
+        </div>
+        replace
+
+        <textarea class="char_input" name="target" id="target" cols="1" rows="1"></textarea>
+        <br>
+        with
+  
+        <textarea class="char_input" name="replacement" id="replacement" cols="1" rows="1"></textarea>
+
+        <br>
+        <button id="copy">Copy</button>
+    </div>
+
+
+
+    <script>
+        let input = document.getElementById("text_input");
+        let output = document.getElementById("text_output");
+        let replacement = document.getElementById("replacement");
+        let target = document.getElementById("target");
+        let copy_button = document.getElementById("copy");
+        let temp_string = "";
+
+        input.addEventListener("input", find_and_replace);
+        target.addEventListener("input", find_and_replace);
+        replacement.addEventListener("input", find_and_replace);
+        copy_button.addEventListener("click", copy);
+
+        function find_and_replace() {
+            temp_string = "";
+            for (x in input.value) {
+
+                if (input.value[x] == target.value[0]) {
+                    temp_string += replacement.value;
+                } else {
+                    temp_string += input.value[x];
+                }
+
+            }
+            output.value = temp_string;
+        }
+    
+        function copy() {
+            navigator.clipboard.writeText(temp_string)
+            console.log(temp_string)
+        }
+
+    </script>
+</body>
+</html>
