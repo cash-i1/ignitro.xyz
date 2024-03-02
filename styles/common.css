@@ -59,12 +59,14 @@ h1 {
     color: #ff4081;
     text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
     font-family: droid_serif_bold;
+    font-weight: 100;
 }
 
 h2 {
     color: #4046ff;
     text-shadow: rgba(21, 0, 255, 0.66) 1px 0 10px;
     font-family: droid_serif_bold;
+    font-weight: 100;
 }
 
 p {
