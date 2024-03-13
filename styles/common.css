@@ -35,9 +35,68 @@
   font-family: jetbrains_regular;
   src: url("/assets/fonts/jetbrains_regular.ttf");
 }
+@font-face {
+  font-family: source_code_pro;
+  src: url(/assets/fonts/source_code_pro.ttf);
+}
+@font-face {
+  font-family: fira_sans;
+  src: url(/assets/fonts/fira_sans.ttf);
+}
+@font-face {
+  font-family: droid_serif;
+  src: url(/assets/fonts/droid_serif.ttf);
+}
+@font-face {
+  font-family: droid_serif_bold;
+  src: url(/assets/fonts/droid_serif_bold.ttf);
+}
+
+/* Keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes flying-ignitro {
+  0% {
+    transform: translate(-400%, -150%);
+  }
+  25% {
+    transform: translate(0%, -150%);
+  }
+  50% {
+    transform: translate(200%, -250%);
+  }
+  75% {
+    transform: translate(360%, -320%);
+  }
+  100% {
+    transform: translate(500%, -600%);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* Type Styles */
-
 body {
   background-color: var(--black);
 }
@@ -52,6 +111,13 @@ h1 {
   color: var(--green);
   font-family: hack;
   text-shadow: 0px 0px 7px var(--green);
+
+  /* From .centred */
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -180,6 +246,20 @@ a.login-button {
   height: auto;
   margin-right: 10px; /* Adds space between images */
   margin-bottom: 10px; /* Adds space between rows of images */
+}
+
+.spinning-header {
+  animation: spin 3s ease-in-out infinite;
+  font-size: 80px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.cell_01 {
+  position: absolute;
+  scale: 0.15;
+  animation: flying-ignitro 10s ease-in-out infinite;
+  pointer-events: none;
 }
 
 /* Screen Size Optimization */
