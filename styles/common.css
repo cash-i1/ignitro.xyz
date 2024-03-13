@@ -205,7 +205,6 @@ a.login-button {
 }
 
 .div-centred {
-  height: 100vh;
   width: calc(100% / 1.5);
   margin: 0 auto;
   flex-direction: column;
