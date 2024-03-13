@@ -250,9 +250,11 @@ a.login-button {
 
 .spinning-header {
   animation: spin 3s ease-in-out infinite;
-  font-size: 80px;
+  font-size: 50px;
   pointer-events: none;
   user-select: none;
+  color: #ff4081;
+  text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
 }
 
 .cell_01 {
