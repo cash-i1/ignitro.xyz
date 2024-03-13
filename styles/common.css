@@ -67,7 +67,7 @@
     transform: rotate(0deg);
   }
 }
-@keyframes flying-ignitro {
+@keyframes chip_01 {
   0% {
     transform: translate(-400%, -150%);
   }
@@ -232,20 +232,20 @@ a.login-button {
 }
 
 .content {
-  width: 100%; /* Adjust width as needed */
+  width: 100%;
   padding: 18px;
   display: none;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  justify-content: flex-start; /* Aligns items to the start (left) of the container */
+  flex-wrap: wrap;
+  justify-content: flex-start;
   background-color: #400043;
   transition: max-height 0.2s ease-out;
 }
 
 .content img {
-  max-width: 49%; /* Ensures images don't exceed the container width */
+  max-width: 49%;
   height: auto;
-  margin-right: 10px; /* Adds space between images */
-  margin-bottom: 10px; /* Adds space between rows of images */
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .spinning-header {
@@ -257,11 +257,24 @@ a.login-button {
   text-shadow: rgba(255, 0, 72, 0.66) 1px 0 10px;
 }
 
-.cell_01 {
+.chip_01 {
   position: absolute;
   scale: 0.15;
-  animation: flying-ignitro 10s ease-in-out infinite;
-  pointer-events: none;
+  animation: chip_01 10s ease-in-out infinite;
+  user-select: none;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.chip_01:hover {
+  opacity: 1;
+}
+
+.chip_01_talk {
+  transition: all 0.2 ease-in-out;
+}
+.chip_01:hover + .chip_01_talk {
+  opacity: 1;
 }
 
 /* Screen Size Optimization */
@@ -274,11 +287,15 @@ a.login-button {
   .div-centred {
     width: calc(100% / 1.5);
   }
+  .chip_01 {
+    display: none;
+  }
 }
 @media (max-width: 650px) {
   .div-centred {
     width: 100%;
   }
+
 }
 @media (max-width: 320px) {
   .div-centred {
