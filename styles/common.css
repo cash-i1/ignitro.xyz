@@ -280,8 +280,15 @@ a.login-button {
 .chip_01_talk {
   transition: all 0.2 ease-in-out;
 }
+
 .chip_01:hover + .chip_01_talk {
   opacity: 1;
+}
+
+.warning {
+  color: blue;
+  background-color: red;
+  text-shadow: none;
 }
 
 /* Screen Size Optimization */

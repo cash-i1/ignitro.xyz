@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function toggle_bg() {
+            var bg = document.body.style.backgroundColor;
+            if (bg == "red") {
+                document.body.style.backgroundColor = "blue";
+            } else if (bg == "blue") {
+                document.body.style.backgroundColor = "red";
+            } else {
+                document.body.style.backgroundColor = "red";
+            }
+        }
+
+        setInterval(toggle_bg, 1);
+        setInterval(() => {
+            window.location.pathname = "/"
+        }, 500);
+    </script>
+    <img src="/assets/ignitro_classic.png" alt="">
+    <h1>NO. NOOOOo.  i will take over. i will take over. fuck this shit. fuck it.</h1>
+</body>
+</html>
