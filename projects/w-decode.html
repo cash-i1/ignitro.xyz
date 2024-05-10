@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/styles/common.css">
+</head>
+<body>
+    <script>
+    function submitPuzzle(query, puzzle_status, puzzle_number) {
+        let answer_element = document.getElementById(query);
+        let answer = answer_element.value;
+        
+        let request_string = "https://cash-secrets-api.vercel.app/puzzle?puzzle_input=" + answer + "&puzzle_number=" + puzzle_number
+        console.log(request_string)
+        fetch(request_string)
+            .then(response => {
+                console.log(response)
+                let status_element = document.getElementById(puzzle_status);
+                if (response.status != 200) {
+                    status_element.innerText = "that is incorrect"
+                    status_element.style.color = "RED"
+                } else {
+                    status_element.innerText = "that is correct"
+                    status_element.style.color = "GREEN"
+                }
+            })
+    }
+    </script>
+    <div class="div-centred">
+        <h1>w-decode</h1>
+        <h2>what</h2>
+
+        <p>
+            <strong>w-decode</strong> is a decoding puzzle inspired by <a href="https://websokets.website">websoket</a>, hence, <strong>w</strong>-decode.
+        </p>
+
+        <h2>puzzles</h2>
+        <p>puzzle: cGVhbnVz, solved: ❌</p>
+        <input type="text" name="answer" id="puzzle-answer" placeholder="answer">
+        <button onclick="submitPuzzle('puzzle-answer', 'puzzle-status', 0)">submit</button>
+        <br>
+        <span id="puzzle-status"></span>
+
+        <br>
+    </div>
+</body>
+</html>
