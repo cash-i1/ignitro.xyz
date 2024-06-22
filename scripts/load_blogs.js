@@ -8,10 +8,10 @@ function add_blogs() {
         let blogs_div = document.getElementById("blogs");
 
         let title_header = document.createElement("h2");
-        title_header.textContent = post.title;
+        title_header.innerHTML= post.title;
 
         let body_para = document.createElement("p");
-        body_para.textContent = post.body;
+        body_para.innerHTML= post.body;
 
         let post_div = document.createElement("div");
 
