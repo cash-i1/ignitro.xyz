@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ignitro.xyz</title>
+    <link rel="stylesheet" href="/styles/common.css" />
+    <script src="/scripts/chip_01.js"></script>
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/page_views.js"></script>
+  </head>
+  <body>
+    <script>
+      function add_blogs() {
+        fetch("/assets/blogs.json", {
+          method: "GET",
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            for (let post of data["posts"]) {
+              let blogs_div = document.getElementById("blogs");
+
+              let title_header = document.createElement("h2");
+              title_header.innerHTML = post.title;
+
+              let body_para = document.createElement("p");
+              body_para.innerHTML = post.body;
+
+              let post_div = document.createElement("div");
+
+              post_div.appendChild(title_header);
+              post_div.appendChild(body_para);
+
+              blogs_div.appendChild(post_div);
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        add_blogs();
+      });
+    </script>
+
+    <div class="div-centred">
+      <h1 class="spinning-header">blog</h1>
+      <h1 style="text-align: left">blog</h1>
+      <div id="blogs"></div>
+    </div>
+  </body>
+</html>
