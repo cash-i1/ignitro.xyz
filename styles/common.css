@@ -153,7 +153,9 @@ a:hover {
   color: var(--light-violet);
 }
 
-p {
+p,
+span,
+label {
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
   font-size: 19px;
