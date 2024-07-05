@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="/styles/common.css" />
   </head>
   <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+          let cont = document.getElementById("tasks");
+          cont.innerHTML = "asdf";
+      });
+    </script>
     <div class="div-centred">
       <h1>inspirotask</h1>
       <p style="text-align: center">
@@ -14,8 +20,10 @@
         corners of the internet.
       </p>
       <h2>checklist</h2>
-      <input type="checkbox" />
-      <p>sdf</p>
+      <div id="tasks">
+        <input type="checkbox" />
+        <p>sdf</p>
+      </div>
     </div>
   </body>
 </html>
